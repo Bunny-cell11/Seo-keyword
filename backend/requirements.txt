@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+openai
+pytrends
+google-search-results
+redis
+
