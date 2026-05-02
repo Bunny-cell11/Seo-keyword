@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  backend:
+    build: ../backend
+    container_name: seo-backend
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:alpine
+    container_name: seo-redis
+    ports:
+      - "6379:6379"
+
